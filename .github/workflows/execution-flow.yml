@@ -37,7 +37,7 @@ jobs:
         id: testfail
         run: npm run test
       - name: Upload test report
-        continue_on_error: true
+        continue-on-error: true
         uses: actions/upload-artifact@v3
         with:
           name: test-report
